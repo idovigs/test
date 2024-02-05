@@ -14,12 +14,10 @@ const tokenContract = new ethers.Contract(contractAddress, abi, provider);
 
 async function fetchTokenBalance() {
   try {
-    
     const balance = await tokenContract.balanceOf(userAddress);
 
     console.log(`Token Balance for ${userAddress}: ${balance.toString()}`);
   } catch (error) {
-    
     console.error('Error fetching token balance:', error.message);
   }
 }
