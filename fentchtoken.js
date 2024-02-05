@@ -1,4 +1,4 @@
-const { ethers } = require('ethers');
+const ethers = require('ethers');
 
 const contractAddress = '0x6aF48997671584672e084Bf2296473677598ee58';
 
